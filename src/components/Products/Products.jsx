@@ -9,7 +9,7 @@ const ProductsData = [
   {
     id: 1,
     img: Img1,
-    title: "Women Ethnic",
+    title: "Brochures",
     rating: 5.0,
     color: "white",
     aosDelay: "0",
@@ -55,14 +55,13 @@ const Products = () => {
         {/* Header section */}
         <div className="text-center mb-10 max-w-[600px] mx-auto">
           <p data-aos="fade-up" className="text-sm text-primary">
-            Top Selling Products for you
+          Online Printing Services for Your Industry
           </p>
           <h1 data-aos="fade-up" className="text-3xl font-bold">
             Products
           </h1>
           <p data-aos="fade-up" className="text-xs text-gray-400">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit
-            asperiores modi Sit asperiores modi
+          We have in-house experts in your industry ready to help with your project needs
           </p>
         </div>
         {/* Body section */}

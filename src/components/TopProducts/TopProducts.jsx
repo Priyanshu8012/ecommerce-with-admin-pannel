@@ -8,21 +8,21 @@ const ProductsData = [
   {
     id: 1,
     img: Img1,
-    title: "Casual Wear",
+    title: "Voting Stickers",
     description:
       "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   },
   {
     id: 2,
     img: Img2,
-    title: "Printed shirt",
+    title: "Voting Stickers",
     description:
       "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   },
   {
     id: 3,
     img: Img3,
-    title: "Women shirt",
+    title: "Campagin Folded",
     description:
       "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   },
@@ -37,11 +37,10 @@ const TopProducts = ({ handleOrderPopup }) => {
             Top Rated Products for you
           </p>
           <h1 data-aos="fade-up" className="text-3xl font-bold">
-            Best Products
+          Print Marketing Tips
           </h1>
           <p data-aos="fade-up" className="text-xs text-gray-400">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit
-            asperiores modi Sit asperiores modi
+          We are more than just an online print shop. We are people here to help you make the most of your printing and help you use it to grow your business.
           </p>
         </div>
         {/* Body section */}

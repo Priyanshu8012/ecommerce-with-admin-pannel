@@ -5,6 +5,7 @@ import { FaCartShopping } from "react-icons/fa6";
 import { FaCaretDown } from "react-icons/fa";
 import DarkMode from "./DarkMode";
 import { FiShoppingBag } from "react-icons/fi";
+  
 
 const Menu = [
   {
@@ -14,24 +15,30 @@ const Menu = [
   },
   {
     id: 2,
-    name: "Top Rated",
+    name: "View All Product",
     link: "/#services",
   },
   {
     id: 3,
-    name: "Kids Wear",
+    name: "Custum Printing",
     link: "/#",
   },
   {
     id: 3,
-    name: "Mens Wear",
+    name: "Shop By industry",
     link: "/#",
   },
   {
     id: 3,
-    name: "Electronics",
+    name: "Directs Mail",
     link: "/#",
   },
+  {
+    id: 4,
+    name: "Admin",
+    link: "/admin",
+  },
+ 
 ];
 
 const DropdownLinks = [
@@ -59,10 +66,14 @@ const Navbar = ({ handleOrderPopup }) => {
       <div className="bg-primary/40 py-2">
         <div className="container flex justify-between items-center">
           <div>
-            <a href="#" className="font-bold text-xl items-center flex gap-1">
+       {   /*  <a href="#" className="font-bold text-xl items-center flex gap-1">
               <FiShoppingBag size="30" />
               ShopMe
-            </a>
+            </a>*/}
+
+            <img src="../src/assets/logo/logo.jpg" alt="" 
+            className="h-12 w-25 "/>
+
           </div>
 
           {/* search bar */}

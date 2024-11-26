@@ -8,23 +8,20 @@ const ImageList = [
   {
     id: 1,
     img: Image1,
-    title: "Upto 50% off on all Men's Wear",
-    description:
-      "lorem His Life will forever be Changed dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    title: " Friendly,Professional online Printing Services",
+  
   },
   {
     id: 2,
     img: Image2,
-    title: "30% off on all Women's Wear",
-    description:
-      "Who's there lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    title: "Handout flyers to create lasting impressions with potential and loyal customers.r",
+    
   },
   {
     id: 3,
     img: Image3,
-    title: "70% off on all Products Sale",
-    description:
-      "consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    title: "Print custom designs in your preferred size and shape",
+  
   },
 ];
 
@@ -79,7 +76,7 @@ const Hero = ({ handleOrderPopup }) => {
                       onClick={handleOrderPopup}
                       className="bg-gradient-to-r from-primary to-secondary hover:scale-105 duration-200 text-white py-2 px-4 rounded-full"
                     >
-                      Order Now
+                      Explore Now
                     </button>
                   </div>
                 </div>

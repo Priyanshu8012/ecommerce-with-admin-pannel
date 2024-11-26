@@ -10,6 +10,8 @@ import Subscribe from "./components/Subscribe/Subscribe";
 import Testimonials from "./components/Testimonials/Testimonials";
 import Footer from "./components/Footer/Footer";
 import Popup from "./components/Popup/Popup";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import AdminRoutes from "./Routes/AdminRoutes";
 
 const App = () => {
   const [orderPopup, setOrderPopup] = React.useState(false);
@@ -17,6 +19,7 @@ const App = () => {
   const handleOrderPopup = () => {
     setOrderPopup(!orderPopup);
   };
+
   React.useEffect(() => {
     AOS.init({
       offset: 100,
@@ -28,17 +31,32 @@ const App = () => {
   }, []);
 
   return (
-    <div className="bg-white dark:bg-gray-900 dark:text-white duration-200">
-      <Navbar handleOrderPopup={handleOrderPopup} />
-      <Hero handleOrderPopup={handleOrderPopup} />
-      <Products />
-      <TopProducts handleOrderPopup={handleOrderPopup} />
-      <Banner />
-      <Subscribe />
-      <Testimonials />
-      <Footer />
-      <Popup orderPopup={orderPopup} setOrderPopup={setOrderPopup} />
-    </div>
+    <Router>
+      <div className="bg-white dark:bg-gray-900 dark:text-white duration-200">
+        <Routes>
+          {/* Public Routes */}
+          <Route
+            path="/"
+            element={
+              <>
+                <Navbar handleOrderPopup={handleOrderPopup} />
+                <Hero handleOrderPopup={handleOrderPopup} />
+                <Products />
+                <TopProducts handleOrderPopup={handleOrderPopup} />
+                <Banner />
+                <Subscribe />
+                <Testimonials />
+                <Footer />
+                <Popup orderPopup={orderPopup} setOrderPopup={setOrderPopup} />
+              </>
+            }
+          />
+
+          {/* Admin Routes */}
+          <Route path="/*" element={<AdminRoutes />} />
+        </Routes>
+      </div>
+    </Router>
   );
 };
 
